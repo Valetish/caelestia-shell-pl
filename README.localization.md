@@ -26,7 +26,18 @@ from a browser, messenger, or email client.
 ## Test installation on Arch Linux
 
 Install the dependencies listed in the main README, then build and install the
-fork in the same way as the official source version:
+fork. Clone it into the Quickshell configuration directory. If you already
+have a manual Caelestia checkout there, rename that directory first and keep
+it as a backup.
+
+```bash
+mkdir -p "$HOME/.config/quickshell"
+git clone --branch main https://github.com/Valetish/caelestia-shell-pl.git \
+  "$HOME/.config/quickshell/caelestia"
+cd "$HOME/.config/quickshell/caelestia"
+```
+
+Build and install it in the same way as the official source version:
 
 ```bash
 cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/
@@ -34,7 +45,14 @@ cmake --build build
 sudo cmake --install build
 ```
 
-After restarting Caelestia, open:
+Restart the shell:
+
+```bash
+caelestia shell -d
+```
+
+If you do not use the Caelestia CLI, run `qs -c caelestia -n -d` instead.
+Then open:
 
 **Settings → Language and region → Interface language → polski**
 
@@ -51,6 +69,13 @@ You can also set the language manually in
 
 Removing the `language` property restores automatic detection from the system
 locale.
+
+### Returning to the official version
+
+Restore your previous `~/.config/quickshell/caelestia` directory if you made a
+backup, then reinstall the official `caelestia-shell` package or repeat the
+installation from the official repository. Your settings under
+`~/.config/caelestia` are stored separately from the shell source.
 
 ## Translation checks
 

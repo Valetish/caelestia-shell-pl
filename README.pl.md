@@ -25,7 +25,18 @@ z przeglądarki, komunikatora lub klienta poczty.
 ## Instalacja testowa na Arch Linux
 
 Najpierw zainstaluj zależności wymienione w głównym pliku README. Następnie
-zbuduj i zainstaluj fork tak samo jak oficjalną wersję źródłową:
+sklonuj ten fork do katalogu konfiguracji Quickshell. Jeżeli masz już w tym
+miejscu ręcznie zainstalowaną Caelestię, najpierw zmień nazwę jej katalogu i
+zachowaj go jako kopię zapasową.
+
+```bash
+mkdir -p "$HOME/.config/quickshell"
+git clone --branch main https://github.com/Valetish/caelestia-shell-pl.git \
+  "$HOME/.config/quickshell/caelestia"
+cd "$HOME/.config/quickshell/caelestia"
+```
+
+Zbuduj i zainstaluj fork tak samo jak oficjalną wersję źródłową:
 
 ```bash
 cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/
@@ -33,7 +44,14 @@ cmake --build build
 sudo cmake --install build
 ```
 
-Po ponownym uruchomieniu Caelestii otwórz:
+Uruchom powłokę ponownie:
+
+```bash
+caelestia shell -d
+```
+
+Jeżeli nie korzystasz z Caelestia CLI, użyj `qs -c caelestia -n -d`.
+Następnie otwórz:
 
 **Ustawienia → Język i region → Język interfejsu → polski**
 
@@ -50,6 +68,13 @@ W razie potrzeby język można ustawić ręcznie w
 
 Usunięcie właściwości `language` przywraca automatyczne dopasowanie do języka
 systemu.
+
+### Powrót do oficjalnej wersji
+
+Przywróć kopię katalogu `~/.config/quickshell/caelestia`, jeżeli została
+utworzona, a następnie przeinstaluj oficjalny pakiet `caelestia-shell` lub
+ponownie wykonaj instalację z oficjalnego repozytorium. Twoje ustawienia w
+`~/.config/caelestia` pozostają oddzielne od kodu powłoki.
 
 ## Sprawdzanie tłumaczenia
 
