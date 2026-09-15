@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 3.19)
 
 if(NOT DEFINED VERSION)
-    execute_process(COMMAND git describe --tags --abbrev=0
+    # Development forks may use descriptive tags (for example polish-v0.2)
+    # as restore points. Only upstream-style release tags are valid CMake
+    # project versions, so ignore every other tag here.
+    execute_process(COMMAND git describe --tags --abbrev=0 --match "v[0-9]*"
         WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
         OUTPUT_VARIABLE VERSION
         OUTPUT_STRIP_TRAILING_WHITESPACE
