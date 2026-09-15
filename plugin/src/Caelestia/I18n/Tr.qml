@@ -1,5 +1,6 @@
 pragma Singleton
 
+import QtQml
 import Caelestia.I18n
 
 TranslatorInternal {
