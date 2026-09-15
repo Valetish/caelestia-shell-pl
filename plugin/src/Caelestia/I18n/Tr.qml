@@ -3,6 +3,8 @@ pragma Singleton
 import Caelestia.I18n
 
 TranslatorInternal {
+    readonly property var locale: Qt.locale(language || Qt.locale().name)
+
     // No-op so the flag var isn't optimised away
     function _unused(v: var): void {
     }
