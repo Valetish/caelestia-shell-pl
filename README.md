@@ -1,3 +1,9 @@
+> [!NOTE]
+> This fork adds a complete Polish localization to Caelestia Shell, including
+> correct plural forms and localized dates and weather. See the
+> [English localization guide](README.localization.md) or
+> [polską dokumentację](README.pl.md).
+
 <h1 align=center>caelestia-shell</h1>
 
 <div align=center>
