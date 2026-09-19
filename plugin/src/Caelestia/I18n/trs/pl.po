@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: caelestia-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-15 14:53+0200\n"
-"PO-Revision-Date: 2026-09-15 00:00+0200\n"
+"POT-Creation-Date: 2026-09-19 15:38+0200\n"
+"PO-Revision-Date: 2026-09-19 00:00+0200\n"
 "Last-Translator: Caelestia Polish translation contributors\n"
 "Language-Team: Polish\n"
 "Language: pl\n"
@@ -367,8 +367,7 @@ msgstr "Nieznana sieć"
 msgid "Connection failed. Please check your password and try again."
 msgstr "Połączenie nie powiodło się. Sprawdź swoje hasło i spróbuj ponownie."
 
-#: modules/bar/popouts/WirelessPassword.qml
-#: modules/nexus/pages/NetworkPage.qml
+#: modules/bar/popouts/WirelessPassword.qml modules/nexus/pages/NetworkPage.qml
 msgid "Connecting..."
 msgstr "Łączenie..."
 
@@ -463,8 +462,7 @@ msgstr "Włącz muzykę, aby pojawiła się tutaj!"
 msgid "Loading lyrics..."
 msgstr "Ładowanie tekstu piosenki..."
 
-#: modules/dashboard/media/LyricList.qml
-#: modules/dashboard/media/LyricsInfo.qml
+#: modules/dashboard/media/LyricList.qml modules/dashboard/media/LyricsInfo.qml
 msgid "No lyrics found"
 msgstr "Nie znaleziono tekstu piosenki"
 
@@ -489,8 +487,7 @@ msgstr "Źródło: %1"
 msgid "Selected candidate: %1 | %2 | %3"
 msgstr "Wybrany wynik: %1 | %2 | %3"
 
-#. TRANSLATORS: %1 = lyric timing offset; ms is the millisecond unit, leave
-#. untranslated
+#. TRANSLATORS: %1 = lyric timing offset; ms is the millisecond unit, leave untranslated
 #: modules/dashboard/media/LyricsInfo.qml
 #, qt-format
 msgid "Offset: %1 ms"
@@ -576,8 +573,7 @@ msgctxt "memory used"
 msgid "Used"
 msgstr "Użyto"
 
-#: modules/dashboard/performance/NetworkCard.qml
-#: modules/nexus/PageRegistry.qml
+#: modules/dashboard/performance/NetworkCard.qml modules/nexus/PageRegistry.qml
 #: modules/nexus/pages/network/NetworkDetailPage.qml
 #: modules/nexus/pages/NetworkPage.qml
 #: modules/nexus/pages/panels/DashboardPanel.qml
@@ -746,8 +742,7 @@ msgstr "Żywy"
 
 #: modules/launcher/services/M3Variants.qml
 msgid "A high chroma palette. The primary palette's chroma is at maximum."
-msgstr ""
-"Paleta o wysokim nasyceniu. Nasycenie palety podstawowej jest maksymalne."
+msgstr "Paleta o wysokim nasyceniu. Nasycenie palety podstawowej jest maksymalne."
 
 #: modules/launcher/services/M3Variants.qml
 msgctxt "M3 scheme variant name"
@@ -755,8 +750,7 @@ msgid "Tonal Spot"
 msgstr "Tonalna"
 
 #: modules/launcher/services/M3Variants.qml
-msgid ""
-"Default for Material theme colours. A pastel palette with a low chroma."
+msgid "Default for Material theme colours. A pastel palette with a low chroma."
 msgstr "Domyślna paleta motywu Material. Pastelowe kolory o niskim nasyceniu."
 
 #: modules/launcher/services/M3Variants.qml
@@ -765,12 +759,8 @@ msgid "Expressive"
 msgstr "Ekspresyjny"
 
 #: modules/launcher/services/M3Variants.qml
-msgid ""
-"A medium chroma palette. The primary palette's hue is different from the "
-"seed colour, for variety."
-msgstr ""
-"Paleta o średnim nasyceniu. Dla urozmaicenia odcień palety podstawowej różni"
-" się od koloru bazowego."
+msgid "A medium chroma palette. The primary palette's hue is different from the seed colour, for variety."
+msgstr "Paleta o średnim nasyceniu. Dla urozmaicenia odcień palety podstawowej różni się od koloru bazowego."
 
 #: modules/launcher/services/M3Variants.qml
 msgctxt "M3 scheme variant name"
@@ -778,12 +768,8 @@ msgid "Fidelity"
 msgstr "Wierność"
 
 #: modules/launcher/services/M3Variants.qml
-msgid ""
-"Matches the seed colour, even if the seed colour is very bright (high "
-"chroma)."
-msgstr ""
-"Dopasowuje się do koloru bazowego, nawet gdy jest on bardzo jasny i mocno "
-"nasycony."
+msgid "Matches the seed colour, even if the seed colour is very bright (high chroma)."
+msgstr "Dopasowuje się do koloru bazowego, nawet gdy jest on bardzo jasny i mocno nasycony."
 
 #: modules/launcher/services/M3Variants.qml
 msgctxt "M3 scheme variant name"
@@ -857,8 +843,7 @@ msgstr "BŁĄD HASŁA: %1"
 #: modules/lock/center/StateMessage.qml
 #, qt-format
 msgid "Fingerprint not recognised (%1/%2). Please try again or use password."
-msgstr ""
-"Nie rozpoznano odcisku palca (%1/%2). Spróbuj ponownie lub użyj hasła."
+msgstr "Nie rozpoznano odcisku palca (%1/%2). Spróbuj ponownie lub użyj hasła."
 
 #. TRANSLATORS: %1 = attempts used so far, %2 = maximum attempts allowed
 #: modules/lock/center/StateMessage.qml
@@ -892,19 +877,15 @@ msgstr "Nieprawidłowe hasło. Spróbuj ponownie."
 
 #: modules/lock/center/StateMessage.qml
 msgid "Maximum password attempts reached. Please use fingerprint."
-msgstr ""
-"Osiągnięto maksymalną liczbę prób wprowadzenia hasła. Użyj odcisku palca."
+msgstr "Osiągnięto maksymalną liczbę prób wprowadzenia hasła. Użyj odcisku palca."
 
 #: modules/lock/center/StateMessage.qml
 msgid "Maximum password attempts reached. Please use face."
-msgstr ""
-"Osiągnięto maksymalną liczbę prób wprowadzenia hasła. Użyj rozpoznawania "
-"twarzy."
+msgstr "Osiągnięto maksymalną liczbę prób wprowadzenia hasła. Użyj rozpoznawania twarzy."
 
 #: modules/lock/center/StateMessage.qml
 msgid "Maximum attempts for all authentication methods reached."
-msgstr ""
-"Osiągnięto maksymalną liczbę prób dla wszystkich metod uwierzytelniania."
+msgstr "Osiągnięto maksymalną liczbę prób dla wszystkich metod uwierzytelniania."
 
 #: modules/lock/center/StateMessage.qml
 msgid "Maximum password attempts reached."
@@ -912,8 +893,7 @@ msgstr "Osiągnięto maksymalną liczbę prób wprowadzenia hasła."
 
 #: modules/lock/center/StateMessage.qml
 msgid "Maximum fingerprint attempts reached. Please use password."
-msgstr ""
-"Osiągnięto maksymalną liczbę prób rozpoznania odcisku palca. Użyj hasła."
+msgstr "Osiągnięto maksymalną liczbę prób rozpoznania odcisku palca. Użyj hasła."
 
 #: modules/lock/center/StateMessage.qml
 msgid "Maximum face attempts reached. Please use password."
@@ -1030,8 +1010,7 @@ msgstr "Brak powiadomień"
 msgid "Feels like %1"
 msgstr "Odczuwalna: %1"
 
-#. TRANSLATORS: %1/%2 = today's max and min temperature, units already
-#. included
+#. TRANSLATORS: %1/%2 = today's max and min temperature, units already included
 #: modules/lock/weather/BriefInfo.qml
 #, qt-format
 msgid "High %1 • Low %2"
@@ -1281,9 +1260,7 @@ msgstr "Ulubiona"
 
 #: modules/nexus/pages/apps/AppInfo.qml
 msgid "Matched by a regex in favouriteApps — edit the config file to change"
-msgstr ""
-"Dopasowano wyrażeniem regularnym w favouriteApps — aby to zmienić, edytuj "
-"plik konfiguracji"
+msgstr "Dopasowano wyrażeniem regularnym w favouriteApps — aby to zmienić, edytuj plik konfiguracji"
 
 #: modules/nexus/pages/apps/AppInfo.qml
 msgid "Pin to the top of the launcher"
@@ -1295,9 +1272,7 @@ msgstr "Ukryta"
 
 #: modules/nexus/pages/apps/AppInfo.qml
 msgid "Matched by a regex in hiddenApps — edit the config file to change"
-msgstr ""
-"Dopasowano wyrażeniem regularnym w hiddenApps — aby to zmienić, edytuj plik "
-"konfiguracji"
+msgstr "Dopasowano wyrażeniem regularnym w hiddenApps — aby to zmienić, edytuj plik konfiguracji"
 
 #: modules/nexus/pages/apps/AppInfo.qml
 msgid "Hide from the launcher"
@@ -1354,8 +1329,7 @@ msgstr "Głośność aplikacji"
 
 #: modules/nexus/pages/audio/AppVolumes.qml
 msgid "Adjust the volume of individual apps currently playing audio."
-msgstr ""
-"Dostosuj głośność poszczególnych aplikacji aktualnie odtwarzających dźwięk."
+msgstr "Dostosuj głośność poszczególnych aplikacji aktualnie odtwarzających dźwięk."
 
 #: modules/nexus/pages/audio/AppVolumes.qml modules/nexus/pages/AudioPage.qml
 msgid "No apps playing audio"
@@ -1528,8 +1502,7 @@ msgstr "Wykrywalne"
 msgid "Allow nearby devices to find this one"
 msgstr "Pozwól pobliskim urządzeniom wykrywać ten komputer"
 
-#. TRANSLATORS: adjective: other devices are allowed to pair with this
-#. computer
+#. TRANSLATORS: adjective: other devices are allowed to pair with this computer
 #: modules/nexus/pages/BluetoothPage.qml
 msgctxt "bluetooth setting"
 msgid "Pairable"
@@ -1538,6 +1511,10 @@ msgstr "Można sparować"
 #: modules/nexus/pages/BluetoothPage.qml
 msgid "Allow nearby devices to pair with this one"
 msgstr "Pozwól pobliskim urządzeniom parować się z tym komputerem"
+
+#: modules/nexus/pages/LanguageAndRegion.qml
+msgid "Auto"
+msgstr "Automatycznie"
 
 #: modules/nexus/pages/LanguageAndRegion.qml
 msgid "°C"
@@ -1560,12 +1537,12 @@ msgid "Decimal (KB, MB)"
 msgstr "Dziesiętne (KB, MB)"
 
 #: modules/nexus/pages/LanguageAndRegion.qml
-msgid "24-hour"
-msgstr "24-godzinny"
-
-#: modules/nexus/pages/LanguageAndRegion.qml
 msgid "12-hour"
 msgstr "12-godzinny"
+
+#: modules/nexus/pages/LanguageAndRegion.qml
+msgid "24-hour"
+msgstr "24-godzinny"
 
 #: modules/nexus/pages/LanguageAndRegion.qml
 msgid "Language"
@@ -1578,10 +1555,6 @@ msgstr "Język interfejsu"
 #: modules/nexus/pages/LanguageAndRegion.qml
 msgid "The language used in the shell UI"
 msgstr "Język używany w interfejsie Caelestii"
-
-#: modules/nexus/pages/LanguageAndRegion.qml
-msgid "Auto"
-msgstr "Automatycznie"
 
 #: modules/nexus/pages/LanguageAndRegion.qml
 msgid "Location picker coming soon"
@@ -1645,8 +1618,7 @@ msgstr "Wprowadź dane poniżej, aby ręcznie połączyć się z siecią."
 msgid "Network name (SSID)"
 msgstr "Nazwa sieci (SSID)"
 
-#. TRANSLATORS: sample network name, translate the e.g. but the name is a
-#. placeholder
+#. TRANSLATORS: sample network name, translate the e.g. but the name is a placeholder
 #: modules/nexus/pages/network/AddNetworkPage.qml
 msgid "e.g. MyHiddenNetwork"
 msgstr "np. MojaUkrytaSieć"
@@ -1699,16 +1671,10 @@ msgstr "Edytuj dostawcę VPN"
 msgid "Add VPN provider"
 msgstr "Dodaj dostawcę VPN"
 
-#. TRANSLATORS: the four names in brackets are provider identifiers, leave
-#. them untranslated
+#. TRANSLATORS: the four names in brackets are provider identifiers, leave them untranslated
 #: modules/nexus/pages/network/AddVpnPage.qml
-msgid ""
-"Built-in names (wireguard, warp, tailscale, netbird) auto-fill their "
-"commands. For others, provide the connect/disconnect commands."
-msgstr ""
-"Wbudowane nazwy (Wireguard, Warp, Tailscale, Netbird) automatycznie "
-"wypełniają swoje polecenia. W przypadku innych podaj polecenia "
-"łączenia/rozłączania."
+msgid "Built-in names (wireguard, warp, tailscale, netbird) auto-fill their commands. For others, provide the connect/disconnect commands."
+msgstr "Wbudowane nazwy (Wireguard, Warp, Tailscale, Netbird) automatycznie wypełniają swoje polecenia. W przypadku innych podaj polecenia łączenia/rozłączania."
 
 #: modules/nexus/pages/network/AddVpnPage.qml
 msgid "Provider name"
@@ -1889,8 +1855,7 @@ msgstr "Wprowadź prawidłowy adres bramy"
 msgid "DNS servers"
 msgstr "Serwery DNS"
 
-#. TRANSLATORS: describes the DNS servers field above: several addresses
-#. separated by commas
+#. TRANSLATORS: describes the DNS servers field above: several addresses separated by commas
 #: modules/nexus/pages/network/EthernetDetailPage.qml
 #: modules/nexus/pages/network/NetworkDetailPage.qml
 msgid "Comma-separated"
@@ -2234,9 +2199,7 @@ msgstr "Dodaj nowy wpis"
 
 #: modules/nexus/pages/panels/taskbar/BarStatusIcons.qml
 msgid "Show a details popout when hovering the status icons"
-msgstr ""
-"Wyświetl wyskakujące okienko ze szczegółami po najechaniu kursorem na ikony "
-"stanu"
+msgstr "Wyświetl wyskakujące okienko ze szczegółami po najechaniu kursorem na ikony stanu"
 
 #: modules/nexus/pages/panels/taskbar/BarTray.qml
 #: modules/nexus/pages/panels/TaskbarPanel.qml
@@ -2294,21 +2257,30 @@ msgstr "Tło zajętego pulpitu"
 
 #: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
 msgctxt "bar workspaces"
-msgid "Show windows"
-msgstr "Pokaż okna"
-
-#: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
-msgid "Show icons of open windows on each workspace"
-msgstr "Pokaż ikony otwartych okien w każdym obszarze roboczym"
-
-#: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
-msgctxt "bar workspaces"
 msgid "Show unoccupied"
 msgstr "Pokaż puste"
 
 #: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
 msgid "Show workspaces that are inactive and empty"
 msgstr "Pokaż obszary robocze, które są nieaktywne i puste"
+
+#: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
+msgctxt "bar workspaces"
+msgid "Per monitor"
+msgstr "Dla każdego monitora"
+
+#: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
+msgid "Hide workspaces not on the current monitor"
+msgstr "Ukrywaj przestrzenie robocze spoza bieżącego monitora"
+
+#: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
+msgctxt "bar workspaces"
+msgid "Show windows"
+msgstr "Pokaż okna"
+
+#: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
+msgid "Show icons of open windows on each workspace"
+msgstr "Pokaż ikony otwartych okien w każdym obszarze roboczym"
 
 #: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
 msgctxt "bar workspaces"
@@ -2522,8 +2494,7 @@ msgstr "Pokaż na pełnym ekranie"
 
 #: modules/nexus/pages/services/NotificationsPage.qml
 msgid "Whether notifications appear over fullscreen apps"
-msgstr ""
-"Określa, czy powiadomienia pojawiają się w aplikacjach pełnoekranowych"
+msgstr "Określa, czy powiadomienia pojawiają się w aplikacjach pełnoekranowych"
 
 #: modules/nexus/pages/services/NotificationsPage.qml
 msgid "Expire automatically"
@@ -2564,9 +2535,7 @@ msgstr "Komunikaty podręczne"
 
 #: modules/nexus/pages/services/NotificationsPage.qml
 msgid "Whether toasts appear over fullscreen apps"
-msgstr ""
-"Określa, czy komunikaty podręczne pojawiają się nad aplikacjami "
-"pełnoekranowymi"
+msgstr "Określa, czy komunikaty podręczne pojawiają się nad aplikacjami pełnoekranowymi"
 
 #: modules/nexus/pages/services/NotificationsPage.qml
 msgid "Visible toasts"
@@ -2666,8 +2635,7 @@ msgstr "Jak często aktualizuje się pozycja mediów (ms)"
 msgid "System stats refresh"
 msgstr "Odświeżanie statystyk systemowych"
 
-#. TRANSLATORS: CPU and GPU are hardware abbreviations, leave them
-#. untranslated
+#. TRANSLATORS: CPU and GPU are hardware abbreviations, leave them untranslated
 #: modules/nexus/pages/ServicesPage.qml
 msgid "CPU, memory and GPU update interval (seconds)"
 msgstr "Interwał aktualizacji procesora, pamięci i karty graficznej (sekundy)"
@@ -2804,8 +2772,7 @@ msgstr "Wyświetl tapetę"
 msgid "Transparency"
 msgstr "Przezroczystość"
 
-#. TRANSLATORS: %1/%2 = opacity values from 0 to 1 for the base surface and
-#. layered surfaces
+#. TRANSLATORS: %1/%2 = opacity values from 0 to 1 for the base surface and layered surfaces
 #: modules/nexus/pages/WallpaperAndStyle.qml
 #, qt-format
 msgid "Base %1, layers %2"
@@ -2824,8 +2791,7 @@ msgstr "Nexus — %1"
 msgid "No body here! :/"
 msgstr "Brak treści :/"
 
-#. TRANSLATORS: the count itself is rendered separately, immediately to the
-#. left
+#. TRANSLATORS: the count itself is rendered separately, immediately to the left
 #: modules/sidebar/NotifDock.qml
 msgctxt "notification count label, number shown separately"
 msgid "notification"
@@ -2988,8 +2954,7 @@ msgstr "Adres: nieznany"
 msgid "Position: %1, %2"
 msgstr "Pozycja: %1, %2"
 
-#. TRANSLATORS: %1/%2 = width and height in pixels; the x is a multiplication
-#. sign
+#. TRANSLATORS: %1/%2 = width and height in pixels; the x is a multiplication sign
 #: modules/windowinfo/Details.qml
 #, qt-format
 msgid "Size: %1 x %2"
@@ -3001,8 +2966,7 @@ msgstr "Rozmiar: %1 x %2"
 msgid "Workspace: %1 (%2)"
 msgstr "Obszar roboczy: %1 (%2)"
 
-#. TRANSLATORS: %1 = monitor name, %2 = monitor id, %3/%4 = x/y position in
-#. pixels
+#. TRANSLATORS: %1 = monitor name, %2 = monitor id, %3/%4 = x/y position in pixels
 #: modules/windowinfo/Details.qml
 #, qt-format
 msgid "Monitor: %1 (%2) at %3, %4"
@@ -3080,8 +3044,7 @@ msgstr "Stan pełnego ekranu: nieznany"
 msgid "Try switching to a window"
 msgstr "Spróbuj przełączyć się na okno"
 
-#. TRANSLATORS: %1 = window title, %2 = monitor name, %3/%4 = x/y position in
-#. pixels
+#. TRANSLATORS: %1 = window title, %2 = monitor name, %3/%4 = x/y position in pixels
 #: modules/windowinfo/Preview.qml
 #, qt-format
 msgid "%1 on monitor %2 at %3, %4"
@@ -3516,7 +3479,7 @@ msgstr[1] "%n minuty"
 msgstr[2] "%n minut"
 
 #: plugin/src/Caelestia/Config/rootnodes.cpp
-#, qt-plural-format, c-format
+#, c-format, qt-plural-format
 msgid "Config loaded with %n issue."
 msgid_plural "Config loaded with %n issues."
 msgstr[0] "Podczas wczytywania konfiguracji wykryto %n problem."
@@ -3620,179 +3583,111 @@ msgstr "Oczekiwano liczby całkowitej, otrzymano liczbę rzeczywistą %1"
 #: plugin/src/Caelestia/Settings/codecs.cpp
 #, qt-format
 msgid "Integer %1 is out of range, expected between %2 and %3"
-msgstr ""
-"Liczba całkowita %1 jest poza zakresem; oczekiwano wartości od %2 do %3"
+msgstr "Liczba całkowita %1 jest poza zakresem; oczekiwano wartości od %2 do %3"
 
-#. TRANSLATORS: %1 = a config key name, %2 = a C++ type name; both are
-#. untranslated identifiers
+#. TRANSLATORS: %1 = a config key name, %2 = a C++ type name; both are untranslated identifiers
 #: plugin/src/Caelestia/Settings/codecs.cpp
 #, qt-format
 msgid "Could not convert %1 to %2"
 msgstr "Nie można przekonwertować %1 na %2"
 
-#. TRANSLATORS: %1 = a config key name, %2 = a comma-separated list of allowed
-#. values; both untranslated
+#. TRANSLATORS: %1 = a config key name, %2 = a comma-separated list of allowed values; both untranslated
 #: plugin/src/Caelestia/Settings/codecs.cpp
 #, qt-format
 msgid "Invalid enum value %1. Expected one of %2"
-msgstr ""
-"Nieprawidłowa wartość wyliczeniowa %1. Oczekiwano jednej z wartości: %2"
+msgstr "Nieprawidłowa wartość wyliczeniowa %1. Oczekiwano jednej z wartości: %2"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a boolean, got null"
-msgstr "Oczekiwano wartości logicznej, otrzymano wartość null"
+msgctxt "expected type"
+msgid "a boolean"
+msgstr "wartości logicznej"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Value has the wrong type"
-msgstr "Wartość ma nieprawidłowy typ"
+msgctxt "expected type"
+msgid "an integer"
+msgstr "liczby całkowitej"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a boolean, got a number"
-msgstr "Oczekiwano wartości logicznej, otrzymano liczbę"
+msgctxt "expected type"
+msgid "a number"
+msgstr "liczby"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a boolean, got a string"
-msgstr "Oczekiwano wartości logicznej, otrzymano ciąg znaków"
+msgctxt "expected type"
+msgid "a string"
+msgstr "ciągu znaków"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a boolean, got an array"
-msgstr "Oczekiwano wartości logicznej, otrzymano tablicę"
+msgctxt "expected type"
+msgid "an array"
+msgstr "tablicy"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a boolean, got an object"
-msgstr "Oczekiwano wartości logicznej, otrzymano obiekt"
+msgctxt "expected type"
+msgid "an object"
+msgstr "obiektu"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a boolean, got nothing"
-msgstr "Oczekiwano wartości logicznej, ale nic nie otrzymano"
+msgctxt "received type"
+msgid "null"
+msgstr "wartość null"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an integer, got null"
-msgstr "Oczekiwano liczby całkowitej, otrzymano wartość null"
+msgctxt "received type"
+msgid "a boolean"
+msgstr "wartość logiczną"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an integer, got a boolean"
-msgstr "Oczekiwano liczby całkowitej, otrzymano wartość logiczną"
+msgctxt "received type"
+msgid "a number"
+msgstr "liczbę"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an integer, got a number"
-msgstr "Oczekiwano liczby całkowitej, otrzymano liczbę"
+msgctxt "received type"
+msgid "a string"
+msgstr "ciąg znaków"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an integer, got a string"
-msgstr "Oczekiwano liczby całkowitej, otrzymano ciąg znaków"
+msgctxt "received type"
+msgid "an array"
+msgstr "tablicę"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an integer, got an array"
-msgstr "Oczekiwano liczby całkowitej, otrzymano tablicę"
+msgctxt "received type"
+msgid "an object"
+msgstr "obiekt"
 
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an integer, got an object"
-msgstr "Oczekiwano liczby całkowitej, otrzymano obiekt"
+msgctxt "received type"
+msgid "nothing"
+msgstr "brak wartości"
 
+#. TRANSLATORS: %1/%2 = the allowed types, %3 = the type that was found; all nouns such as "a string"
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an integer, got nothing"
-msgstr "Oczekiwano liczby całkowitej, ale nie otrzymano niczego"
+#, qt-format
+msgid "Expected %1 or %2, got %3"
+msgstr "Oczekiwano %1 lub %2, otrzymano %3"
 
+#. TRANSLATORS: %1-%3 = the allowed types, %4 = the type that was found; all nouns such as "a string"
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a number, got null"
-msgstr "Oczekiwano liczby, otrzymano wartość null"
+#, qt-format
+msgid "Expected %1, %2 or %3, got %4"
+msgstr "Oczekiwano %1, %2 lub %3, otrzymano %4"
 
+#. TRANSLATORS: %1-%4 = the allowed types, %5 = the type that was found; all nouns such as "a string"
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a number, got a boolean"
-msgstr "Oczekiwano liczby, otrzymano wartość logiczną"
+#, qt-format
+msgid "Expected one of: %1, %2, %3, %4; got %5"
+msgstr "Oczekiwano jednego z typów: %1, %2, %3, %4; otrzymano %5"
 
+#. TRANSLATORS: %1 = the expected type, %2 = the type that was found; both nouns such as "a string"
 #: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a number, got a string"
-msgstr "Oczekiwano liczby, otrzymano ciąg znaków"
+#, qt-format
+msgid "Expected %1, got %2"
+msgstr "Oczekiwano %1, otrzymano %2"
 
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a number, got an array"
-msgstr "Oczekiwano liczby, otrzymano tablicę"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a number, got an object"
-msgstr "Oczekiwano liczby, otrzymano obiekt"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a number, got nothing"
-msgstr "Oczekiwano liczby, ale nie otrzymano żadnej wartości"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a string, got null"
-msgstr "Oczekiwano ciągu znaków, otrzymano wartość null"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a string, got a boolean"
-msgstr "Oczekiwano ciągu znaków, otrzymano wartość logiczną"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a string, got a number"
-msgstr "Oczekiwano ciągu znaków, otrzymano liczbę"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a string, got an array"
-msgstr "Oczekiwano ciągu, otrzymano tablicę"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a string, got an object"
-msgstr "Oczekiwano ciągu znaków, otrzymano obiekt"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected a string, got nothing"
-msgstr "Oczekiwano ciągu znaków, ale nie otrzymano żadnej wartości"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an array, got null"
-msgstr "Oczekiwano tablicy, otrzymano wartość null"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an array, got a boolean"
-msgstr "Oczekiwano tablicy, otrzymano wartość logiczną"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an array, got a number"
-msgstr "Oczekiwano tablicy, otrzymano liczbę"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an array, got a string"
-msgstr "Oczekiwano tablicy, otrzymano ciąg znaków"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an array, got an object"
-msgstr "Oczekiwano tablicy, otrzymano obiekt"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an array, got nothing"
-msgstr "Oczekiwano tablicy, ale nie otrzymano żadnej wartości"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an object, got null"
-msgstr "Oczekiwano obiektu, otrzymano wartość null"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an object, got a boolean"
-msgstr "Oczekiwano obiektu, otrzymano wartość logiczną"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an object, got a number"
-msgstr "Oczekiwano obiektu, otrzymano liczbę"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an object, got a string"
-msgstr "Oczekiwano obiektu, otrzymano ciąg znaków"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an object, got an array"
-msgstr "Oczekiwano obiektu, otrzymano tablicę"
-
-#: plugin/src/Caelestia/Settings/common.cpp
-msgid "Expected an object, got nothing"
-msgstr "Oczekiwano obiektu, ale nie otrzymano żadnej wartości"
-
-#: plugin/src/Caelestia/Settings/listnode.cpp
-#: plugin/src/Caelestia/Settings/objectnode.cpp
-msgid "Global properties should not be defined in overlay files"
+#: plugin/src/Caelestia/Settings/node.cpp
+msgid "Global options should not be defined in overlay files"
 msgstr "Właściwości globalne nie powinny być definiowane w plikach nakładek"
 
 #. TRANSLATORS: %1 = a config key name

@@ -1,6 +1,6 @@
 # Caelestia Shell po polsku
 
-To jest polska wersja rozwojowa Caelestia Shell. Obejmuje 840 komunikatów
+To jest polska wersja rozwojowa Caelestia Shell. Obejmuje ponad 800 komunikatów
 interfejsu: Nexus, panel główny, launcher, pasek zadań, panel boczny, ekran
 blokady oraz komunikaty i powiadomienia generowane przez Caelestię.
 
@@ -22,41 +22,47 @@ Treść powiadomień pochodzących z innych programów pozostaje w języku, w kt
 wysłał ją dany program. Caelestia nie może bezpiecznie tłumaczyć np. wiadomości
 z przeglądarki, komunikatora lub klienta poczty.
 
-## Instalacja testowa na Arch Linux
+## Bezpieczny test na Arch Linux
 
-Najpierw zainstaluj zależności wymienione w głównym pliku README. Następnie
-sklonuj ten fork do katalogu konfiguracji Quickshell. Jeżeli masz już w tym
-miejscu ręcznie zainstalowaną Caelestię, najpierw zmień nazwę jej katalogu i
-zachowaj go jako kopię zapasową.
+Poniższy sposób nie używa `sudo`, nie zastępuje oficjalnej instalacji i nie
+dotyka konfiguracji w `~/.config/caelestia`. Kod, biblioteki i testowe ustawienia
+trafiają do osobnego katalogu. Najpierw zainstaluj zależności wymienione w
+głównym pliku README, a następnie wykonaj:
 
 ```bash
-mkdir -p "$HOME/.config/quickshell"
+mkdir -p "$HOME/.local/src"
 git clone --branch main https://github.com/Valetish/caelestia-shell-pl.git \
-  "$HOME/.config/quickshell/caelestia"
-cd "$HOME/.config/quickshell/caelestia"
+  "$HOME/.local/src/caelestia-shell-pl"
+cd "$HOME/.local/src/caelestia-shell-pl"
 ```
 
-Zbuduj i zainstaluj fork tak samo jak oficjalną wersję źródłową:
+Zbuduj i zainstaluj wersję testową tylko dla bieżącego użytkownika:
 
 ```bash
-cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/
-cmake --build build
-sudo cmake --install build
+CAELESTIA_PL_TEST_ROOT="$HOME/.local/share/caelestia-pl-test"
+cmake -B build-test -G Ninja -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_INSTALL_PREFIX="$CAELESTIA_PL_TEST_ROOT"
+cmake --build build-test
+cmake --install build-test
 ```
 
-Uruchom powłokę ponownie:
+Uruchom ją z oddzielną konfiguracją. Polecenie pozostaje podłączone do terminala;
+zakończenie go skrótem `Ctrl+C` wyłącza testową powłokę.
 
 ```bash
-caelestia shell -d
+XDG_CONFIG_HOME="$CAELESTIA_PL_TEST_ROOT/config" \
+CAELESTIA_LIB_DIR="$CAELESTIA_PL_TEST_ROOT/lib/caelestia" \
+QML2_IMPORT_PATH="$CAELESTIA_PL_TEST_ROOT/lib/qt6/qml${QML2_IMPORT_PATH:+:$QML2_IMPORT_PATH}" \
+qs -p "$CAELESTIA_PL_TEST_ROOT/etc/xdg/quickshell/caelestia"
 ```
 
-Jeżeli nie korzystasz z Caelestia CLI, użyj `qs -c caelestia -n -d`.
 Następnie otwórz:
 
 **Ustawienia → Język i region → Język interfejsu → polski**
 
-W razie potrzeby język można ustawić ręcznie w
-`~/.config/caelestia/shell.json`:
+Podczas tego testu ustawienia są zapisywane w
+`~/.local/share/caelestia-pl-test/config/caelestia/shell.json`, a nie w Twojej
+zwykłej konfiguracji. W razie potrzeby język można ustawić tam ręcznie:
 
 ```json
 {
@@ -69,12 +75,13 @@ W razie potrzeby język można ustawić ręcznie w
 Usunięcie właściwości `language` przywraca automatyczne dopasowanie do języka
 systemu.
 
-### Powrót do oficjalnej wersji
+### Instalacja systemowa
 
-Przywróć kopię katalogu `~/.config/quickshell/caelestia`, jeżeli została
-utworzona, a następnie przeinstaluj oficjalny pakiet `caelestia-shell` lub
-ponownie wykonaj instalację z oficjalnego repozytorium. Twoje ustawienia w
-`~/.config/caelestia` pozostają oddzielne od kodu powłoki.
+Standardowe `sudo cmake --install build` zastępuje systemowe pliki Caelestii.
+Używaj go dopiero po udanym teście i zachowaj możliwość ponownego zainstalowania
+oficjalnego pakietu. Sama instalacja nie nadpisuje pliku
+`~/.config/caelestia/shell.json`, ale przed systemową zmianą i tak warto zrobić
+jego kopię zapasową.
 
 ## Sprawdzanie tłumaczenia
 
