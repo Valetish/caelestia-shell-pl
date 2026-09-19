@@ -1,17 +1,28 @@
 cmake_minimum_required(VERSION 3.19)
 
 if(NOT DEFINED VERSION)
-    # Development forks may use descriptive tags (for example polish-v0.2)
-    # as restore points. Only upstream-style release tags are valid CMake
-    # project versions, so ignore every other tag here.
+    # Prefer upstream releases, but also support this fork's restore-point tags.
     execute_process(COMMAND git describe --tags --abbrev=0 --match "v[0-9]*"
         WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
         OUTPUT_VARIABLE VERSION
         OUTPUT_STRIP_TRAILING_WHITESPACE
+        ERROR_QUIET
     )
 
     if("${VERSION}" STREQUAL "")
-        message(FATAL_ERROR "VERSION is not set and failed to get from git")
+        execute_process(COMMAND git describe --tags --abbrev=0 --match "polish-v[0-9]*"
+            WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
+            OUTPUT_VARIABLE VERSION
+            OUTPUT_STRIP_TRAILING_WHITESPACE
+            ERROR_QUIET
+        )
+        string(REGEX REPLACE "^polish-" "" VERSION "${VERSION}")
+    endif()
+
+    # A source snapshot or a clone made without tags must still be buildable.
+    if("${VERSION}" STREQUAL "")
+        set(VERSION "0.0.0")
+        message(WARNING "No release tag found; using VERSION=${VERSION}")
     endif()
 endif()
 

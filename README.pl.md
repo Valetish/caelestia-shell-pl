@@ -29,7 +29,7 @@ dotyka konfiguracji w `~/.config/caelestia`. Kod, biblioteki i testowe ustawieni
 trafiają do osobnego katalogu. Najpierw zainstaluj zależności wymienione w
 głównym pliku README, a następnie wykonaj:
 
-```bash
+```fish
 mkdir -p "$HOME/.local/src"
 git clone --branch main https://github.com/Valetish/caelestia-shell-pl.git \
   "$HOME/.local/src/caelestia-shell-pl"
@@ -38,9 +38,9 @@ cd "$HOME/.local/src/caelestia-shell-pl"
 
 Zbuduj i zainstaluj wersję testową tylko dla bieżącego użytkownika:
 
-```bash
-CAELESTIA_PL_TEST_ROOT="$HOME/.local/share/caelestia-pl-test"
-cmake -B build-test -G Ninja -DCMAKE_BUILD_TYPE=Release \
+```fish
+set CAELESTIA_PL_TEST_ROOT "$HOME/.local/share/caelestia-pl-test"
+cmake -S . -B build-test -G Ninja -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_INSTALL_PREFIX="$CAELESTIA_PL_TEST_ROOT"
 cmake --build build-test
 cmake --install build-test
@@ -49,11 +49,11 @@ cmake --install build-test
 Uruchom ją z oddzielną konfiguracją. Polecenie pozostaje podłączone do terminala;
 zakończenie go skrótem `Ctrl+C` wyłącza testową powłokę.
 
-```bash
-XDG_CONFIG_HOME="$CAELESTIA_PL_TEST_ROOT/config" \
-CAELESTIA_LIB_DIR="$CAELESTIA_PL_TEST_ROOT/lib/caelestia" \
-QML2_IMPORT_PATH="$CAELESTIA_PL_TEST_ROOT/lib/qt6/qml${QML2_IMPORT_PATH:+:$QML2_IMPORT_PATH}" \
-qs -p "$CAELESTIA_PL_TEST_ROOT/etc/xdg/quickshell/caelestia"
+```fish
+env XDG_CONFIG_HOME="$CAELESTIA_PL_TEST_ROOT/config" \
+  CAELESTIA_LIB_DIR="$CAELESTIA_PL_TEST_ROOT/lib/caelestia" \
+  QML2_IMPORT_PATH="$CAELESTIA_PL_TEST_ROOT/lib/qt6/qml:$QML2_IMPORT_PATH" \
+  qs -p "$CAELESTIA_PL_TEST_ROOT/etc/xdg/quickshell/caelestia"
 ```
 
 Następnie otwórz:
