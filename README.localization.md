@@ -47,14 +47,23 @@ cmake --build build-test
 cmake --install build-test
 ```
 
-Start it with an isolated configuration. The process stays attached to the
-terminal; pressing `Ctrl+C` stops the test shell.
+Stop the regular Caelestia instance first so two shells do not reserve panel
+space or handle the same shortcuts simultaneously. Then start the test build
+with an isolated configuration. The process stays attached to the terminal;
+pressing `Ctrl+C` stops the test shell.
 
 ```bash
+caelestia shell -k
 XDG_CONFIG_HOME="$CAELESTIA_PL_TEST_ROOT/config" \
 CAELESTIA_LIB_DIR="$CAELESTIA_PL_TEST_ROOT/lib/caelestia" \
 QML2_IMPORT_PATH="$CAELESTIA_PL_TEST_ROOT/lib/qt6/qml${QML2_IMPORT_PATH:+:$QML2_IMPORT_PATH}" \
 qs -p "$CAELESTIA_PL_TEST_ROOT/etc/xdg/quickshell/caelestia"
+```
+
+Restart the regular shell after the test:
+
+```bash
+caelestia shell -d
 ```
 
 Then open:
@@ -76,13 +85,30 @@ regular configuration. You can set the language there manually if needed:
 Removing the `language` property restores automatic detection from the system
 locale.
 
-### System-wide installation
+### Permanent installation on Arch Linux
 
-The standard `sudo cmake --install build` replaces system Caelestia files. Use
-it only after a successful isolated test and keep a way to reinstall the
-official package. The installation itself does not overwrite
-`~/.config/caelestia/shell.json`, although backing that file up before a system
-change is still recommended.
+The recommended method builds a real `caelestia-shell-pl` package, so Pacman
+tracks every installed file and can safely replace or remove the Polish build.
+Do not run `pacman -Sy` by itself; perform a complete repository and AUR update:
+
+```bash
+paru -Syu
+paru -S --needed qt6-m3shapes-git
+```
+
+Then build and install the package from this repository:
+
+```bash
+cd "$HOME/.local/src/caelestia-shell-pl"
+git pull --ff-only
+cd packaging/arch
+makepkg -si
+```
+
+Accept Pacman's prompt to remove the conflicting `caelestia-shell` package.
+The package does not own or overwrite `~/.config/caelestia/shell.json`. Restart
+the shell with `caelestia shell -k` followed by `caelestia shell -d`. To return
+to the official release, run `paru -S caelestia-shell`.
 
 ## Translation checks
 

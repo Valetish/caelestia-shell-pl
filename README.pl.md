@@ -46,14 +46,23 @@ cmake --build build-test
 cmake --install build-test
 ```
 
-Uruchom ją z oddzielną konfiguracją. Polecenie pozostaje podłączone do terminala;
+Najpierw zatrzymaj zwykłą Caelestię, aby dwie powłoki nie rezerwowały jednocześnie
+miejsca na panele i nie obsługiwały tych samych skrótów. Następnie uruchom wersję
+testową z oddzielną konfiguracją. Polecenie pozostaje podłączone do terminala;
 zakończenie go skrótem `Ctrl+C` wyłącza testową powłokę.
 
 ```fish
+caelestia shell -k
 env XDG_CONFIG_HOME="$CAELESTIA_PL_TEST_ROOT/config" \
   CAELESTIA_LIB_DIR="$CAELESTIA_PL_TEST_ROOT/lib/caelestia" \
   QML2_IMPORT_PATH="$CAELESTIA_PL_TEST_ROOT/lib/qt6/qml:$QML2_IMPORT_PATH" \
   qs -p "$CAELESTIA_PL_TEST_ROOT/etc/xdg/quickshell/caelestia"
+```
+
+Po teście uruchom ponownie zwykłą powłokę:
+
+```fish
+caelestia shell -d
 ```
 
 Następnie otwórz:
@@ -75,13 +84,37 @@ zwykłej konfiguracji. W razie potrzeby język można ustawić tam ręcznie:
 Usunięcie właściwości `language` przywraca automatyczne dopasowanie do języka
 systemu.
 
-### Instalacja systemowa
+### Stała instalacja na Arch Linux
 
-Standardowe `sudo cmake --install build` zastępuje systemowe pliki Caelestii.
-Używaj go dopiero po udanym teście i zachowaj możliwość ponownego zainstalowania
-oficjalnego pakietu. Sama instalacja nie nadpisuje pliku
-`~/.config/caelestia/shell.json`, ale przed systemową zmianą i tak warto zrobić
-jego kopię zapasową.
+Zalecana instalacja tworzy prawdziwy pakiet `caelestia-shell-pl`, dzięki czemu
+Pacman śledzi wszystkie pliki i potrafi bezpiecznie zastąpić lub usunąć polską
+wersję. Nie używaj samego `pacman -Sy`: Arch nie obsługuje częściowych
+aktualizacji. Najpierw wykonaj pełną aktualizację systemu i pakietów AUR:
+
+```fish
+paru -Syu
+paru -S --needed qt6-m3shapes-git
+```
+
+Następnie zbuduj i zainstaluj pakiet z repozytorium:
+
+```fish
+cd "$HOME/.local/src/caelestia-shell-pl"
+git pull --ff-only
+cd packaging/arch
+makepkg -si
+```
+
+Pacman zapyta, czy usunąć konfliktujący pakiet `caelestia-shell`; odpowiedz
+`t` (tak). Plik `~/.config/caelestia/shell.json` nie jest częścią pakietu i nie
+zostanie nadpisany. Po instalacji przeładuj powłokę:
+
+```fish
+caelestia shell -k
+caelestia shell -d
+```
+
+Powrót do oficjalnego wydania jest równie prosty: `paru -S caelestia-shell`.
 
 ## Sprawdzanie tłumaczenia
 
