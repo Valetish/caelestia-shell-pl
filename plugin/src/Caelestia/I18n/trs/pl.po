@@ -1674,7 +1674,7 @@ msgstr "Dodaj dostawcę VPN"
 #. TRANSLATORS: the four names in brackets are provider identifiers, leave them untranslated
 #: modules/nexus/pages/network/AddVpnPage.qml
 msgid "Built-in names (wireguard, warp, tailscale, netbird) auto-fill their commands. For others, provide the connect/disconnect commands."
-msgstr "Wbudowane nazwy (Wireguard, Warp, Tailscale, Netbird) automatycznie wypełniają swoje polecenia. W przypadku innych podaj polecenia łączenia/rozłączania."
+msgstr "Dla wbudowanych identyfikatorów (wireguard, warp, tailscale, netbird) polecenia są uzupełniane automatycznie. Dla pozostałych dostawców podaj polecenia łączenia i rozłączania."
 
 #: modules/nexus/pages/network/AddVpnPage.qml
 msgid "Provider name"
@@ -2248,12 +2248,12 @@ msgstr "Aktywny wskaźnik"
 #: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
 msgctxt "bar workspaces"
 msgid "Active trail"
-msgstr "Ślad aktywnego pulpitu"
+msgstr "Ślad aktywnego obszaru roboczego"
 
 #: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
 msgctxt "bar workspaces"
 msgid "Occupied background"
-msgstr "Tło zajętego pulpitu"
+msgstr "Tło zajętego obszaru roboczego"
 
 #: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
 msgctxt "bar workspaces"
@@ -2271,7 +2271,7 @@ msgstr "Dla każdego monitora"
 
 #: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
 msgid "Hide workspaces not on the current monitor"
-msgstr "Ukrywaj przestrzenie robocze spoza bieżącego monitora"
+msgstr "Ukrywaj obszary robocze spoza bieżącego monitora"
 
 #: modules/nexus/pages/panels/taskbar/BarWorkspaces.qml
 msgctxt "bar workspaces"
@@ -2344,7 +2344,7 @@ msgstr "Działania przewijania"
 
 #: modules/nexus/pages/panels/TaskbarPanel.qml
 msgid "Scroll over the workspace indicator to switch workspaces"
-msgstr "Przewijaj nad wskaźnikiem pulpitów, aby je przełączać"
+msgstr "Przewijaj nad wskaźnikiem obszarów roboczych, aby je przełączać"
 
 #: modules/nexus/pages/panels/TaskbarPanel.qml
 msgid "Volume"
@@ -2856,7 +2856,7 @@ msgstr "Nagraj obszar"
 #: modules/utilities/cards/Record.qml
 msgctxt "recording mode"
 msgid "Region"
-msgstr "Region"
+msgstr "Obszar"
 
 #: modules/utilities/cards/Record.qml
 msgid "Record fullscreen with sound"
@@ -2911,7 +2911,7 @@ msgstr "Usuń"
 
 #: modules/windowinfo/Buttons.qml
 msgid "Move to workspace"
-msgstr "Przenieś na pulpit"
+msgstr "Przenieś na obszar roboczy"
 
 #: modules/windowinfo/Buttons.qml
 msgid "Tile"

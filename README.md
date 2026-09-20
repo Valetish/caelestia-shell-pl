@@ -1,6 +1,6 @@
 > [!NOTE]
-> This fork adds a complete Polish localization to Caelestia Shell, including
-> correct plural forms and localized dates and weather. See the
+> This repository adds 821 Polish translations to Caelestia Shell and uses
+> the selected UI language for calendar and weather dates. See the
 > [English localization guide](README.localization.md) or
 > [polską dokumentację](README.pl.md).
 
